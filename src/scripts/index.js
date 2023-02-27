@@ -1,3 +1,7 @@
-import '../styles/index.scss';
+import "../styles/index.css";
 
-console.log('webpack starterkit');
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+  const order = new Order();
+  order.placeOrder();
+});
